@@ -1,7 +1,7 @@
 function parseSRC() {
     const parent = window.parent
     console.log("parent: ", parent)
-    const srcURLObj = new URL(document.getElementById("PeopleSoft%20Test").getAttribute("src"))
+    const srcURLObj = new URL(window.parent.location.href)
     const urlParams = new URLSearchParams(srcURLObj.search)
     document.getElementById("entityType").innerHTML = "Entity Type: " + urlParams.get("EntityType")
     document.getElementById("entityID").innerHTML = "Entity ID: " + urlParams.get("EntityID")
