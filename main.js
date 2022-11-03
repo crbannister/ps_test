@@ -9,5 +9,5 @@ function parseSRC() {
     document.getElementById("corporationID").innerHTML = "Corporation ID: " + urlParams.get("CorporationID")
     document.getElementById("privateLabelID").innerHTML = "Private Label ID: " + urlParams.get("PrivateLabelID")
 
-    //alert(JSON.stringify(urlParams.get("UserID")))
+    //alert(JSON.stringify(urlParams.get("UserID")))//
 }
