@@ -1,6 +1,6 @@
 function parseSRC() {
-    const document = document
-    console.log("document: ", document)
+    const vardocument = document
+    console.log("document: ", vardocument)
     const srcURLObj = new URL(iframe.src)
     const urlParams = new URLSearchParams(srcURLObj.search)
     document.getElementById("entityType").innerHTML = "Entity Type: " + urlParams.get("EntityType")
