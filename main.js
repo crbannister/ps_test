@@ -1,7 +1,7 @@
 function parseSRC() {
-    const iframe = window.location
-    console.log("window: ", iframe)
-    const srcURLObj = new URL(iframe.src)
+    const srcURL = window.location.href
+    console.log("URL: ", srcURL)
+    const srcURLObj = new URL(srcURL)
     const urlParams = new URLSearchParams(srcURLObj.search)
     document.getElementById("entityType").innerHTML = "Entity Type: " + urlParams.get("EntityType")
     document.getElementById("entityID").innerHTML = "Entity ID: " + urlParams.get("EntityID")
