@@ -1,5 +1,5 @@
 function parseSRC() {
-    const iframe = window.frameElement
+    const iframe = window.location
     console.log("frame: ", iframe)
     const srcURLObj = new URL(iframe)
     const urlParams = new URLSearchParams(srcURLObj.search)
